@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/TylerSmall19/spi-net#readme",
   "dependencies": {
-    "noble": "^1.7.0"
+    "rolling-spider": "^1.5.2"
   }
 }
