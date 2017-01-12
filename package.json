@@ -1,0 +1,23 @@
+{
+  "name": "spider-drone-team",
+  "version": "1.0.0",
+  "description": "Voice Controlled Rolling Spider drones",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerSmall19/spi-net.git"
+  },
+  "author": "TylerSmall19, JHiggs85, KevinGoltermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerSmall19/spi-net/issues"
+  },
+  "homepage": "https://github.com/TylerSmall19/spi-net#readme",
+  "dependencies": {
+    "noble": "^1.7.0"
+  }
+}
