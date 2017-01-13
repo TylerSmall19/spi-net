@@ -10,17 +10,21 @@
 
 var RollingSpider = require('rolling-spider');
 var temporal = require('temporal');
-var rollingSpider = new RollingSpider({uuid: 'RS_B138965'});
+var rollingSpider = new RollingSpider();
+// Kevin
+// {uuid: 'RS_B138965'}
+// Jon
+// {uuid: 'RS_R042799'}
 
 rollingSpider.connect(function () {
+  console.log('Paired');
   rollingSpider.setup(function () {
     rollingSpider.flatTrim();
     rollingSpider.startPing();
     rollingSpider.flatTrim();
-
     temporal.queue([
       {
-        delay: 3000,
+        delay: 5000,
         task: function () {
           console.log('Takeoff');
           rollingSpider.takeOff();
@@ -28,7 +32,7 @@ rollingSpider.connect(function () {
         }
       },
       {
-        delay: 2000,
+        delay: 5000,
         task: function () {
           console.log('Forward');
           rollingSpider.forward();
