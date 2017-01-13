@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/TylerSmall19/spi-net#readme",
   "dependencies": {
-    "rolling-spider": "^1.5.2"
+    "rolling-spider": "^1.5.2",
+    "temporal": "^0.4.0"
   }
 }
