@@ -18,4 +18,4 @@ PUB_NUB_PUB=[YOUR_PUBLISHING_KEY]
 PUB_NUB_CHANNEL=[YOUR_CHANNEL_NAME]
 ```
 8. run `npm start` to begin searching for drones.
-9. If you're using our accompanying Alexa App, configure those files [here](https://github.com/TylerSmall19/spi-net-server).
+9. If you're using our accompanying Alexa App, configure those files with the instructions [here](https://github.com/TylerSmall19/spi-net-skill).
