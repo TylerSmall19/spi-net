@@ -23,7 +23,7 @@ var pubnub = require("pubnub")({
 });
 
 pubnub.subscribe({
-  channel  : "sky_net",
+  channel  : process.env.PUB_NUB_CHANNEL,
   callback : function(message) {
     console.log('Received: ', message);
   }

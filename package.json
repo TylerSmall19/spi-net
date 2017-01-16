@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/TylerSmall19/spi-net.git"
   },
-  "author": "TylerSmall19, JHiggs85, KevinGoltermann",
+  "author": {
+    "email": "tylersmall.user@gmail.com",
+    "name" : "Jon Higgenson, Tyler Small, Kevin Goltermann"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TylerSmall19/spi-net/issues"
