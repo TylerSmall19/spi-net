@@ -134,11 +134,11 @@ pubnub.subscribe({
   			rollingSpider.down();
   		break;
   		case "TURNLEFT":
-  			console.log("Furning left");
+  			console.log("Turning left");
   			rollingSpider.turnLeft();
   		break;
   		case "TURNRIGHT":
-  			console.log("Furning right");
+  			console.log("Turning right");
   			rollingSpider.turnRight();
   		break;
   	  case "FRONTFLIP":
