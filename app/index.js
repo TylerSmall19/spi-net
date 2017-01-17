@@ -133,19 +133,23 @@ pubnub.subscribe({
   			console.log("Flying down");
   			rollingSpider.down();
   		break;
-  		case "turn left":
+  		case "TURNLEFT":
   			console.log("Furning left");
   			rollingSpider.turnLeft();
   		break;
-  		case "turn right":
+  		case "TURNRIGHT":
   			console.log("Furning right");
   			rollingSpider.turnRight();
   		break;
-  	  case "flip":
+  	  case "FRONTFLIP":
   	    console.log("Flipping...");
   	    rollingSpider.frontFlip();
   	  break;
-  		case "patrol":
+      case "BACKFLIP":
+        console.log("Flipping...");
+        rollingSpider.frontFlip();
+      break;      
+  		case "PATROL":
   			console.log("Patroling....");
   			rollingSpider.patrol();
   		break;
