@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app/swarmindex.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/TylerSmall19/spi-net#readme",
   "dependencies": {
-    "rolling-spider": "^1.5.2",
+    "spi-net": "^1.0.7",
     "temporal": "^0.4.0",
     "pubnub": "^3.7.14",
     "dotenv": "^4.0.0"
