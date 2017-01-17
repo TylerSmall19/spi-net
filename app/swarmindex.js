@@ -107,11 +107,11 @@ swarm.on('assembled', function () {
           console.log("Swarm is taking off");
           swarm.takeOff();
       break;
-      case "straight":
+      case "FORWARD":
           console.log("Swarm is flying straight");
           swarm.forward();
       break;
-      case "back":
+      case "BACK":
           console.log("Swarm is flying back");
           swarm.backward();
       break;
