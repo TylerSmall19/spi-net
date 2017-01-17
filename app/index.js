@@ -104,59 +104,59 @@ pubnub.subscribe({
   callback : function(message) {
     console.log('Received: ', message);
 	
-	switch(message.command) {
-		case "FLY":
-			console.log("Drone is launching...");
-			rollingSpider.takeOff();
-		break;
-		case "straight":
-			console.log("Flying straight");
-			rollingSpider.forward();
-		break;
-		case "back":
-			console.log("Flying back");
-			rollingSpider.backward();
-		break;
-		case "RIGHT":
-			console.log("Flying right");
-			rollingSpider.right();
-		break;
-		case "LEFT":
-			console.log("Flying left");
-			rollingSpider.left();
-		break;
-		case "UP":
-			console.log("Flying up");
-			rollingSpider.up();
-		break;
-		case "DOWN":
-			console.log("Flying down");
-			rollingSpider.down();
-		break;
-		case "turn left":
-			console.log("Furning left");
-			rollingSpider.turnLeft();
-		break;
-		case "turn right":
-			console.log("Furning right");
-			rollingSpider.turnRight();
-		break;
-	      case "flip":
-	        console.log("Flipping...");
-	        rollingSpider.frontFlip();
-	  	break;
-		case "patrol":
-			console.log("Patroling....");
-			rollingSpider.patrol();
-		break;
-		case "LAND":
-			console.log('Stopping');
-			temporal.clear();
-			rollingSpider.land();
-		break;
-		default:
-			console.log('Invalid Command');
-		break;
-		}
-	}	    
+  	switch(message.command) {
+  		case "FLY":
+  			console.log("Drone is launching...");
+  			rollingSpider.takeOff();
+  		break;
+  		case "straight":
+  			console.log("Flying straight");
+  			rollingSpider.forward();
+  		break;
+  		case "back":
+  			console.log("Flying back");
+  			rollingSpider.backward();
+  		break;
+  		case "RIGHT":
+  			console.log("Flying right");
+  			rollingSpider.right();
+  		break;
+  		case "LEFT":
+  			console.log("Flying left");
+  			rollingSpider.left();
+  		break;
+  		case "UP":
+  			console.log("Flying up");
+  			rollingSpider.up();
+  		break;
+  		case "DOWN":
+  			console.log("Flying down");
+  			rollingSpider.down();
+  		break;
+  		case "turn left":
+  			console.log("Furning left");
+  			rollingSpider.turnLeft();
+  		break;
+  		case "turn right":
+  			console.log("Furning right");
+  			rollingSpider.turnRight();
+  		break;
+  	      case "flip":
+  	        console.log("Flipping...");
+  	        rollingSpider.frontFlip();
+  	  	break;
+  		case "patrol":
+  			console.log("Patroling....");
+  			rollingSpider.patrol();
+  		break;
+  		case "LAND":
+  			console.log('Stopping');
+  			temporal.clear();
+  			rollingSpider.land();
+  		break;
+  		default:
+  			console.log('Invalid Command');
+  		break;
+  		}
+  	}	    
 });
