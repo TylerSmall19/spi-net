@@ -90,7 +90,7 @@ RollingSpider.prototype.patrol = function(){
 
 
 rollingSpider.connect(function () {
-  console.log('Paired');
+  console.log('Paired...Ready to fly');
   rollingSpider.setup(function () {
     rollingSpider.flatTrim();
     rollingSpider.startPing();
@@ -141,10 +141,10 @@ pubnub.subscribe({
   			console.log("Furning right");
   			rollingSpider.turnRight();
   		break;
-  	      case "flip":
-  	        console.log("Flipping...");
-  	        rollingSpider.frontFlip();
-  	  	break;
+  	  case "flip":
+  	    console.log("Flipping...");
+  	    rollingSpider.frontFlip();
+  	  break;
   		case "patrol":
   			console.log("Patroling....");
   			rollingSpider.patrol();
