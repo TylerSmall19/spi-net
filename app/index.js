@@ -109,11 +109,11 @@ pubnub.subscribe({
   			console.log("Drone is launching...");
   			rollingSpider.takeOff();
   		break;
-  		case "straight":
+  		case "FORWARD":
   			console.log("Flying straight");
   			rollingSpider.forward();
   		break;
-  		case "back":
+  		case "BACK":
   			console.log("Flying back");
   			rollingSpider.backward();
   		break;
