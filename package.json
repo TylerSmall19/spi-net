@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/TylerSmall19/spi-net#readme",
   "dependencies": {
-    "spi-net": "^1.0.5",
+    "spi-net": "^1.0.7",
     "temporal": "^0.4.0",
     "pubnub": "^3.7.14",
     "dotenv": "^4.0.0"
