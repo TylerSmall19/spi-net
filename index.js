@@ -1,2 +1,2 @@
 require('dotenv').load();
-require('./app/index')
+require('./app/swarmindex')

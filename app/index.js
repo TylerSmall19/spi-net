@@ -1,20 +1,8 @@
-// var noble = require('noble');
-// console.log(noble);
-// noble.startScanning();
-
-// noble.on('stateChange', function(){
-//   console.log("Scanning...");
-// });
-// console.log("Hello World!");
 'use strict';
 
 var RollingSpider = require('spi-net');
 var temporal = require('temporal');
 var rollingSpider = new RollingSpider();
-// Kevin
-// {localName: 'RS_B138965'}
-// Jon
-// {localName: 'RS_R042799'}
 
 var pubnub = require("pubnub")({
     ssl           : true,  // <- enable TLS Tunneling over TCP
@@ -22,6 +10,8 @@ var pubnub = require("pubnub")({
     subscribe_key : process.env.PUB_NUB_SUB
 });
 
+
+// Patrol Route Path
 RollingSpider.prototype.patrol = function(){
     temporal.queue([
       {
