@@ -111,35 +111,35 @@ pubnub.subscribe({
   		break;
   		case "FORWARD":
   			console.log("Flying straight");
-  			rollingSpider.forward();
+  			rollingSpider.forward({steps: 30, speed: 50});
   		break;
   		case "BACK":
   			console.log("Flying back");
-  			rollingSpider.backward();
+  			rollingSpider.backward({steps: 30, speed: 50});
   		break;
   		case "RIGHT":
-  			console.log("Flying right");
-  			rollingSpider.right();
+  		  console.log("Flying right");
+  			rollingSpider.right({steps: 30, speed: 50});
   		break;
   		case "LEFT":
   			console.log("Flying left");
-  			rollingSpider.left();
+  			rollingSpider.left({steps: 30, speed: 50});
   		break;
   		case "UP":
   			console.log("Flying up");
-  			rollingSpider.up();
+  			rollingSpider.up({steps: 30, speed: 50});
   		break;
   		case "DOWN":
   			console.log("Flying down");
-  			rollingSpider.down();
+  			rollingSpider.down({steps: 30, speed: 50});
   		break;
   		case "TURNLEFT":
   			console.log("Turning left");
-  			rollingSpider.turnLeft();
+  			rollingSpider.turnLeft({steps: 20, speed: 50});
   		break;
   		case "TURNRIGHT":
   			console.log("Turning right");
-  			rollingSpider.turnRight();
+  			rollingSpider.turnRight({steps: 20, speed: 50});
   		break;
   	  case "FRONTFLIP":
   	    console.log("Flipping...");
@@ -161,6 +161,6 @@ pubnub.subscribe({
   		default:
   			console.log('Invalid Command');
   		break;
-  		}
-  	}	    
+  	}
+  }	    
 });
