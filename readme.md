@@ -24,6 +24,7 @@ PUB_NUB_CHANNEL=[YOUR_CHANNEL_NAME]
 2. If you're using our accompanying Alexa App, configure those files with the instructions [here](https://github.com/TylerSmall19/spi-net-skill).
 
 If you run into issues with these commands and instructions, please open an issue or search the closed issues for similar bugs.
+
 ------------------------------
 ## Contributing
 We are currently not accepting contributions until after 1.20.2017.
