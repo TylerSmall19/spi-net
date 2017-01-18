@@ -109,35 +109,35 @@ swarm.on('assembled', function () {
       break;
       case "FORWARD":
           console.log("Swarm is flying straight");
-          swarm.forward();
+          swarm.forward({steps: 30, speed: 50});
       break;
       case "BACK":
           console.log("Swarm is flying back");
-          swarm.backward();
+          swarm.backward({steps: 30, speed: 50});
       break;
       case "RIGHT":
           console.log("Swarm is flying right");
-          swarm.right();
+          swarm.right({steps: 30, speed: 50});
       break;
       case "LEFT":
           console.log("Swarm is flying left");
-          swarm.left();
+          swarm.left({steps: 30, speed: 50});
       break;
       case "UP":
           console.log("Swarm is flying up");
-          swarm.up();
+          swarm.up({steps: 30, speed: 50});
       break;
       case "DOWN":
           console.log("Swarm is flying down");
-          swarm.down();
+          swarm.down({steps: 30, speed: 50});
       break;
       case "TURNLEFT":
           console.log("Swarm is turning left");
-          swarm.turnLeft();
+          swarm.turnLeft({steps: 20, speed: 50});
       break;
       case "TURNRIGHT":
           console.log("Swarm is turning right");
-          swarm.turnRight();
+          swarm.turnRight({steps: 20, speed: 50});
       break;
       case "FRONTFLIP":
           console.log("Swarm is front-flipping...");
