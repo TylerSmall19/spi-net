@@ -109,11 +109,11 @@ pubnub.subscribe({
   			console.log("Drone is launching...");
   			rollingSpider.takeOff();
   		break;
-  		case "straight":
+  		case "FORWARD":
   			console.log("Flying straight");
   			rollingSpider.forward();
   		break;
-  		case "back":
+  		case "BACK":
   			console.log("Flying back");
   			rollingSpider.backward();
   		break;
@@ -133,19 +133,23 @@ pubnub.subscribe({
   			console.log("Flying down");
   			rollingSpider.down();
   		break;
-  		case "turn left":
-  			console.log("Furning left");
+  		case "TURNLEFT":
+  			console.log("Turning left");
   			rollingSpider.turnLeft();
   		break;
-  		case "turn right":
-  			console.log("Furning right");
+  		case "TURNRIGHT":
+  			console.log("Turning right");
   			rollingSpider.turnRight();
   		break;
-  	  case "flip":
+  	  case "FRONTFLIP":
   	    console.log("Flipping...");
   	    rollingSpider.frontFlip();
   	  break;
-  		case "patrol":
+      case "BACKFLIP":
+        console.log("Flipping...");
+        rollingSpider.frontFlip();
+      break;      
+  		case "PATROL":
   			console.log("Patroling....");
   			rollingSpider.patrol();
   		break;
