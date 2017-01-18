@@ -104,60 +104,60 @@ swarm.on('assembled', function () {
     
     switch(message.command) {
       case "FLY":
-          console.log("Swarm is taking off");
-          swarm.takeOff();
+        console.log("Swarm is taking off");
+        swarm.takeOff();
       break;
       case "FORWARD":
-          console.log("Swarm is flying straight");
-          swarm.forward({steps: 30, speed: 50});
+        console.log("Swarm is flying straight");
+        swarm.forward({steps: 30, speed: 50});
       break;
       case "BACK":
-          console.log("Swarm is flying back");
-          swarm.backward({steps: 30, speed: 50});
+        console.log("Swarm is flying back");
+        swarm.backward({steps: 30, speed: 50});
       break;
       case "RIGHT":
-          console.log("Swarm is flying right");
-          swarm.right({steps: 30, speed: 50});
+        console.log("Swarm is flying right");
+        swarm.right({steps: 30, speed: 50});
       break;
       case "LEFT":
-          console.log("Swarm is flying left");
-          swarm.left({steps: 30, speed: 50});
+        console.log("Swarm is flying left");
+        swarm.left({steps: 30, speed: 50});
       break;
       case "UP":
-          console.log("Swarm is flying up");
-          swarm.up({steps: 30, speed: 50});
+        console.log("Swarm is flying up");
+        swarm.up({steps: 30, speed: 50});
       break;
       case "DOWN":
-          console.log("Swarm is flying down");
-          swarm.down({steps: 30, speed: 50});
+        console.log("Swarm is flying down");
+        swarm.down({steps: 30, speed: 50});
       break;
       case "TURNLEFT":
-          console.log("Swarm is turning left");
-          swarm.turnLeft({steps: 20, speed: 50});
+        console.log("Swarm is turning left");
+        swarm.turnLeft({steps: 20, speed: 50});
       break;
       case "TURNRIGHT":
-          console.log("Swarm is turning right");
-          swarm.turnRight({steps: 20, speed: 50});
+        console.log("Swarm is turning right");
+        swarm.turnRight({steps: 20, speed: 50});
       break;
       case "FRONTFLIP":
-          console.log("Swarm is front-flipping...");
-          swarm.frontFlip();
+        console.log("Swarm is front-flipping...");
+        swarm.frontFlip();
       break;
       case "BACKFLIP":
-          console.log("Swarm is front-flipping...");
-          swarm.backFlip();
+        console.log("Swarm is front-flipping...");
+        swarm.backFlip();
       break;      
       case "PATROL":
-          console.log("Swarm patroling....");
-          swarm.patrol();
+        console.log("Swarm patroling....");
+        swarm.patrol();
       break;
       case "LAND":
-          console.log('Swarm is landing');
-          temporal.clear();
-          swarm.land();
+        console.log('Swarm is landing');
+        temporal.clear();
+        swarm.land();
       break;
       default:
-          console.log('Invalid Command');
+        console.log('Invalid Command');
       break;
       }
     }

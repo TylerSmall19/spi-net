@@ -118,7 +118,7 @@ pubnub.subscribe({
   			rollingSpider.backward({steps: 30, speed: 50});
   		break;
   		case "RIGHT":
-  			console.log("Flying right");
+  		  console.log("Flying right");
   			rollingSpider.right({steps: 30, speed: 50});
   		break;
   		case "LEFT":
@@ -161,6 +161,6 @@ pubnub.subscribe({
   		default:
   			console.log('Invalid Command');
   		break;
-  		}
-  	}	    
+  	}
+  }	    
 });
