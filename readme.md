@@ -1,7 +1,7 @@
 # Rolling Spider Network Initiative (SpiNet)
 #### Voice Controlled Drone Interface
 
-[[demo of what the drone]](https://www.youtube.com/watch?v=kMM47NrGHT4)
+[Drone Video Demo](https://www.youtube.com/watch?v=kMM47NrGHT4)
 -----------------------------
 ## Get it Working
 ### Set Up (Prerequisites)
