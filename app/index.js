@@ -33,7 +33,6 @@ RollingSpider.prototype.patrol = function(){
       	task: function(){
       	  rollingSpider.forward({ speed: 50, steps: 50 });
       	  console.log('Forward 50 steps');
-      	  cooldown();
       	}
       },
       {
